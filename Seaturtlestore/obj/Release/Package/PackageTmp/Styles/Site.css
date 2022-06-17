@@ -1,0 +1,559 @@
+﻿s/* DEFAULTS
+----------------------------------------------------------*/
+
+
+.Thick-Border {
+    border: 3px solid #5DBAC6;
+    background-image: url('../Img/Effect.png');
+    background-repeat: repeat;
+}
+
+
+/*body   
+{
+    background-position: center center;
+    font-size: .80em;
+    font-family: calibri;
+    margin: 0px;
+    padding: 0px;
+    color: #FFFFFF;
+    background-image: url('../Img/Background.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-style: normal;
+    font-variant: normal;
+}*/
+a:link, a:visited
+{
+    color: #FFFF00;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: #FFFF00;
+}
+a:active
+{
+    color: #FFFF00;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #FFFF00;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: #FFFF00;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    margin: 10px auto 0px auto;
+    clear: both;
+}
+.header
+{
+    position: relative;
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 0px 20px;
+    width: 99%;
+}
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+    color: #FFFF00;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+    
+}
+
+.main
+{
+    padding: 0px 2px 0px 2px;
+    margin: 0px auto 2px auto;
+    width: auto;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    background-position: right center;
+    text-align:center;
+    color: #FFFFFF;
+    padding: 8px 0px 8px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 1em;
+   
+    
+    background-repeat: no-repeat;
+}
+
+#Video {
+	width: 570px;
+	height: 326px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	clear: both;
+}
+.Tube-border {
+    margin: 10px auto 10px auto;
+    border: thin ridge #5DBAC6;
+    height: 315px;
+    width: 560px;
+}
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+}
+div.menu
+{
+    margin: 2px auto 2px auto;
+    padding: 2px;
+}
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 4px;
+}
+div.menu ul li a, div.menu ul li a:visited
+{
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: right;
+    font-size: medium;
+    border-bottom-color: #5DBAC6;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-weight: bold;
+    background-color: #0B1343;
+}
+div.menu ul li a:hover
+{
+    padding: 4px;
+    color: #FFFF00;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    background-image: url('../Img/Effect.png');
+    background-repeat: repeat;
+    background-color: #0B1343;
+}
+div.menu ul li a:active
+{
+    padding: 4px;
+    background-color: #FFFFFF;
+    color: #465c71;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+.Menu-Last
+{
+    color: #FFFFFF;
+    padding: 8px 0px 8px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    font-size: x-small;
+}
+.Center-Text
+{
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+    font-size: large;
+}
+.Center-TextCopy
+{
+    color: #FFFFFF;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.Item-Title
+{
+    padding: 0px;
+    margin: 0px auto;
+    font-weight: bold;
+    font-size: x-large;
+}
+.BlueText
+{
+    color: #000080;
+    padding: 0px;
+    margin: 0px;
+    line-height: normal;
+    font-weight: bold;
+    font-size: medium;
+}
+hr
+        {
+            background-color: #FFFFFF;
+            border-color: #5DBAC6;
+        }
+.WhiteTextLeft
+{
+    color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    line-height: normal;
+    font-weight: bold;
+    font-size: medium;
+}
+.SocialMedia
+{
+    margin: 10px auto 10px auto;
+    clear: both;
+    width: 100%;
+}
+.Member-Text
+{
+    padding: 5px;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+}
+.Store-Width
+        {
+    padding: 10px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    clear: none;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 15px;
+    width:100%;
+}
+.Yellow-Underline
+{
+    color: #FFFF00;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: underline;
+}
+.Adopt-Nest-YouTube
+{
+    width: 480px;
+    margin: 10px auto 0px auto;
+    border: 1px solid #5DBAC6;
+    height: 390px;
+}
+.Center-Text-normal
+{
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+    font-size: medium;
+}
+.Left-Text-normal
+{
+    padding: 0px;
+    margin: 10px auto 0px auto;
+    text-align: left;
+    line-height: normal;
+    font-weight: bold;
+    font-size: medium;
+}
+.border
+{
+    width: 480px;
+    margin: 10px auto 0px auto;
+    border: 1px solid #5DBAC6;
+    height: 297px;
+}
+.Figure
+{
+    padding: 0px 0px 10px 0px;
+    margin: 10px auto 10px auto;
+    text-align: left;
+    line-height: normal;
+    font-size: medium;
+    font-style: italic;
+}
+.PaigeNicoleWimsatt
+{
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.AllthatYears
+{
+    width: 228px;
+    margin: 10px auto 10px auto;
+    height: 78px;
+}
+.Calibri {
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+}
+.PlushHeader {
+    padding: 7px;
+    margin: 3px;
+    border: 1px solid #5DBAC6;
+    border-radius: 7px;
+    color: #FFFF00;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    background-repeat: repeat;
+    background-color: #0B1343;
+    clear: both;
+}
+.Calibri-Left {
+    line-height: normal;
+    vertical-align: middle;
+    text-align: left;
+}
+.QR {
+    width: 220px;
+    height: 220px;
+    margin: 5px auto 5px auto;
+    padding: 10px;
+    border: 1px solid #5DBAC6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #12496E;
+    background-color: #0B1343;
+}
+.G-One-Today {
+            float: left;
+            clear: none;
+        }
+        .One-Today-logo {
+    width: 414px;
+    height: 144px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+}
+.Download-One-Today {
+    width: 220px;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    border: 1px solid #5DBAC6;
+    border-radius:45px;
+    border-bottom-left-radius:0px;
+    
+    clear: right;
+    text-align: center;
+}
+.One-Title {
+    margin: 3px auto 3px auto;
+    border: 1px solid #5DBAC6;
+    border-radius: 15px;
+    padding: 7px;
+    font-size: medium;
+    background-color: #0B1343;
+    color: #0B1343;
+    text-align: center;
+    font-family: arial, Helvetica, sans-serif;
+}
+.border-General {
+    border: 1px solid #5DBAC6;
+}
+.Gold-Names {
+    color: #FFFF00;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    line-height: normal;
+    font-weight: bold;
+    font-size: medium;
+}
+.Sea-Width {
+    margin: 0px auto 10px auto;
+    padding: 10px;
+    width:100%;
+}

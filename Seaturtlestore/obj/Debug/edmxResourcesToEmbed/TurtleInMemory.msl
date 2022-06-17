@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="theseatu_TurtleModelStoreContainer" CdmEntityContainer="MemoryEntities">
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="theseatu_TurtleModel.Item">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="AddtoCartURL" ColumnName="AddtoCartURL" />
+          <ScalarProperty Name="BuyingPrice" ColumnName="BuyingPrice" />
+          <ScalarProperty Name="Alt" ColumnName="Alt" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

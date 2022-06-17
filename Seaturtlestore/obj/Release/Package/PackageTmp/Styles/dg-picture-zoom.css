@@ -1,0 +1,19 @@
+﻿.dg-picture-zoom{
+	cursor : url(http://www.dhtmlgoodies.com/scripts/picture-zoom/cursors/magnify-plus.cur), pointer !important;
+}
+.dg-picture-zoom-large{
+    background-position: center center;
+    cursor : url(http://www.dhtmlgoodies.com/scripts/picture-zoom/cursors/magnify-minus.cur), pointer !important;
+    background-image: url('../Img/Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dg-picture-zoom-border-container{
+    border: 1px solid #5DBAC6;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    box-shadow: 1px 1px 1px 1px #5DBAC6;
+    border-radius: 5px;
+}

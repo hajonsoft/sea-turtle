@@ -1,0 +1,13 @@
+mi3-wsq3.my-hosting-panel.com
+
+
+theseatu_m3li1
+N8nnr81!
+
+theseatu_Turtle
+
+
+ PNE-700232
+
+
+Data Source=mi3-wsq3.my-hosting-panel.com;Initial Catalog=theseatu_Turtle;User ID=theseatu_m3li1;Password=N8nnr81!

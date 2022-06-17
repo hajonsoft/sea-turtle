@@ -1,0 +1,286 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Seaturtlestore.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title><%--<%:Page.Title %> - Sea Turtle Store--%></title>
+    <%--<link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />--%>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <script type="text/javascript">
+        //Check if the top location is same as the current location
+        if (top.location.hostname != self.location.hostname) {
+            //If not then set the top to you current
+            top.location.href = self.location.href;
+        }
+    </script>
+
+    <!-- Bootstrap -->
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <link href="bootstrap/css/animate.css" rel="stylesheet" />
+    <!-- Timeline CSS -->
+    <link href="../dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/dg-picture-zoom.css"/>
+	<script type="text/javascript" src="js/external/mootools-1.2.4-core-yc.js"></script>
+	<script type="text/javascript" src="js/external/mootools-more.js"></script>
+	<script type="text/javascript" src="js/dg-picture-zoom.js"></script>
+	<script type="text/javascript" src="js/dg-picture-zoom-autoload.js"></script>
+    <meta name="google-site-verification" content="cddLaeNcQ5vzkQWeysm7slexSGVdsAErlbfgFH_LN8k" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+   
+  <script>
+      (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-58403064-1', 'auto');
+      ga('send', 'pageview');
+
+</script>
+
+   
+
+    <meta name="apple-mobile-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="http://theseaturtlestore.com/Img/Save-Sea-Turtle-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="http://theseaturtlestore.com/Img/Save-Sea-Turtle-72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="http://theseaturtlestore.com/Img/Save-Sea-Turtle-144.png" />
+
+
+</head>
+<body style="background: url(/img/background.jpg) top repeat;
+    background-attachment:fixed;
+    background-color:#122f5c; color:#ffffff">
+    
+    <form runat="server">
+   
+        <div id="wrapper">
+            
+            <%--<div style="background-image: url(img/Merry-Christmas-4.gif); background-repeat:repeat-x; height:30px"></div>--%>
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <!-- Navigation -->
+                <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button>
+                        <a href="Default.aspx" style="text-decoration: none">
+                        <asp:Label ID="Label1" runat="server" Text="The Sea Turtle Store" CssClass="navbar-brand" ForeColor="#FFFF00" ToolTip="The Sea Turtle Store
+Save Hawksbill, Kemp's Ridley, Loggerhead, Green, Leatherback Sea Turtles
+Sea Turtle Shop for Cool Sea Turtle stuff, Casual Wear, Gifts, Kids Stuff
+Adopt Sea Turtle Nest to help endangered Sea Turtle"></asp:Label>
+                        </a>
+                    </div>
+                    <div class="navbar-inverse sidebar" role="navigation">
+                        <div class="sidebar-nav navbar-collapse">
+                            <ul class="nav" id="side-menu">
+                                <li class="sidebar-search">
+                                    <div class="input-group custom-search-form">
+                                        <div>
+                                            <a href="Default.aspx">
+                                            <img src="Img/SeaTurtleLogo.png" class="img-responsive center-block"/></a>
+                                        </div>
+                                    </div>
+                            <!-- /input-group -->
+                                </li>
+                                <li>
+                                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Img/smile-amazon-com.gif" CssClass="img-responsive center-block" OnClientClick="window.open('https://smile.amazon.com/ch/59-2828707');return false;"/>
+                                </li>
+                                <li><a href="Default.aspx">Welcome</a> </li>
+                                <li><a href="http://saveseaturtle.org/" title="National Save the Sea Turtle Foundation main website">Save The Sea Turtle</a> </li>
+                                <li><a href="Sea-Turtle-casual-wear.aspx" title="Sea Turtle Casual Wear">Casual Wear</a></li>
+                                <li><a href="Sea-Turtles-T-Shirt.aspx" title="Sea Turtle T-shirts">T-shirts</a></li>
+                                <li><a href="Sea-Turtles-kids-stuff.aspx" title="Sea Turtle Kids Stuff">Kids Stuff</a></li>
+                                <li><a href="Sea-Turtle-Books.aspx" title="Sea Turtle Books">Books</a></li>
+                                <li><a href="Sea-Turtles-Gifts.aspx" title="Sea Turtle Gifts">Gifts</a></li>
+                                <li><a href="#">Adopt A Sea Turtle Nest<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li><a href="Adopt-a-Sea-Turtle-Nest.aspx">Adopt A Sea Turtle Nest</a></li>
+                                        <li><a href="Adopt-Sea-Turtle-Nest.aspx">Adopt A Nest</a> </li>
+                                        <li><a href="Friend-Adopt-Sea-Turtle-Nest.aspx">Adopt for a Friend</a> </li>
+                                    </ul>
+                            <!-- /.nav-second-level -->
+                                </li>
+                                <li><a href="Make-a-donation-to-help-save-the-Sea-Turtle.aspx" title="Monthly donation to National Save The Sea Turtle Foundation">Monthly Donation</a></li>
+                                <li><a href="1-Today.aspx" title="Donate $1.00 and help Save Sea Turtles">$1.00 Today</a></li>
+                                <li><a href="Florida-Environmental-Outreach.aspx" title="Florida Environmental Outreach">Outreach Magazine</a></li>
+                                <li><a href="#">Memberships<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li><a href="Memberships.aspx" title="National Save the Sea Turtle Foundation Memberships">Memberships</a></li>
+                                        <li><a href="Memberships-for-a-friend.aspx" title="National Save the Sea Turtle Foundation Memberships for a Friend">Memberships for a Friend</a></li>
+                                    </ul>
+                            <!-- /.nav-second-level -->
+                                </li>
+                                <li><a href="Lifetime-Member.aspx" title="National Save the Sea Turtle Foundation Lifetime Member">Lifetime Member</a></li>
+                                <li><a href="In-Memory.aspx" title="Gifts in Memoriam">Gifts in Memoriam</a></li>
+                                <li><a href="In-Loving-Memory.aspx" title="In Loving Memory">Memorials</a></li>
+                                <li><a href="Contact.aspx" title="Contact National Save the Sea Turtle Foundation">Contact Us</a></li>
+                                <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BEXB2Y2WHQ4AN" title="Make a Payment to National Save the Sea Turtle Foundation">Make a Payment</a></li>
+                                <li class="text-center" style="background-color:#ffffff">
+                                    <div id="Div1" >
+									
+						<script type="text/jscript">
+						    function googleTranslateElementInit() {
+						        new google.translate.TranslateElement({
+						            pageLanguage: 'en',
+						            autoDisplay: false,
+						            gaTrack: true,
+
+						            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+						        }, 'google_translate_element');
+						    }
+</script>
+	 <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script> 
+					                	            </div>
+                                </li>
+                                <li>
+                                    <img alt="sea turtle store, Sea turtle, sea turtle stuff, buy Sea turtle nest" class="img-responsive center-block" src="http://theseaturtlestore.com/Img/SeaTurtle26.png" /></li>
+                            </ul>
+                        </div>
+                <!-- /.sidebar-collapse -->
+                    </div>
+               
+            
+            <!-- /.navbar-static-side -->
+                </nav>
+
+
+                
+
+    </asp:ContentPlaceHolder>
+
+            
+
+        <div id="page-wrapper" style="border-style: none">
+           
+            <%--<div class="row navbar-inverse ">
+                <div class="animated flipInX" style="padding:15px; color:red"><b>Per State guidelines, we are temporarily suspending shipping at this time.  Please continue to shop and
+donate, your orders will still be processed!  Thank you for your understanding, and most of all, be well.
+ For questions or concerns, please call <a href="tel:9543519333" title="call National Save The Sea Turtle Foundation">954-351-9333</a>.</b></div>
+
+            </div>--%>
+
+
+            <div class="row" style="padding-top: 25px">
+                <div class="col-lg-12">
+
+
+                    
+
+                    <%--<div>
+                        <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><img src="img/merry-christmas-3.gif" style="float:left"/><img src="img/Merry-Christmas-16.gif" style="float:left; padding-top:25px" class="img-responsive center-block"/></marquee>
+                        
+                    </div>--%>
+                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                    </div>
+            </div>
+          
+
+
+
+
+              <!-- /.row -->
+           
+            <!-- /.row -->
+          
+
+
+        </div>
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+         <hr style="border:solid 1px #ffffff; width:80%"/>
+
+        <footer style="clear:both" class="main">
+   <div style="background-image: url('http://www.theseaturtlestore.com/Img/Footer.png'); background-repeat: no-repeat; background-attachment: fixed; background-position: right center; text-align:center">
+       
+        <div style="margin-top:15px; margin-bottom:15px">
+            <a style="border: none;" onclick="window.open('https://secure.ssl.com/team/ab4-1h8q1in/site_seals/6ec77c65-628e3b17/site_report', 'site_report','height=500, width=400, top=100, left=100'); return false;" onmouseover="this.style.cursor='pointer'" href="https://secure.ssl.com/team/ab4-1h8q1in/site_seals/6ec77c65-628e3b17/site_report"><img width="130px" src="https://securesslcom.a.cdnify.io/assets/ssl_seal_1-3dfcdf69a9e544495dbcf366a74ee5c4baca7e4f8018f7ddfa22f2de9bcf464d.png" alt="Ssl seal 1" /></a>
+
+        </div>
+       
+        <a href="Default.aspx">National Save The Sea Turtle Foundation</a> of Florida Registration Number CH-2841.<br />
+        Internal Revenue Code 501 (c) (3)<br /><br />
+Copyright &copy; 1987 - <%: DateTime.Now.Year %> <br />National Save The Sea Turtle Foundation, Inc - 
+        <a href="Default.aspx" style="text-decoration:none">The Sea Turtle Store</a>
+        <div style="clear:both">Web Design & Development by <a href="http://webdesignexpressions.net" style="text-decoration:none" target="_blank">Web Design Expressions, Inc</a></div>
+    </div>
+</footer>
+        
+
+
+
+
+
+
+
+
+
+    
+    </form>
+<%--</div>--%>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../bower_components/raphael/raphael-min.js"></script>
+    <script src="../bower_components/morrisjs/morris.min.js"></script>
+    <script src="../js/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+</body>
+</html>
+    

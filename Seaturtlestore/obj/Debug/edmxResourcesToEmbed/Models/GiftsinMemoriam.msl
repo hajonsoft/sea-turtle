@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="theseatu_TurtleModelStoreContainer" CdmEntityContainer="MemoriamTurtleEntities">
+    <EntitySetMapping Name="Memories">
+      <EntityTypeMapping TypeName="theseatu_TurtleModel.Memory">
+        <MappingFragment StoreEntitySet="Memory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Loving" ColumnName="Loving" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

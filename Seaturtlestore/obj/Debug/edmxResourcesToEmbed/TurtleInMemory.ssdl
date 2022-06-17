@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="theseatu_TurtleModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="theseatu_TurtleModelStoreContainer">
+    <EntitySet Name="Items" EntityType="theseatu_TurtleModel.Store.Items" store:Type="Tables" Schema="m3li1" />
+  </EntityContainer>
+  <EntityType Name="Items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="2000" />
+    <Property Name="Image" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="AddtoCartURL" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="BuyingPrice" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Alt" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="500" />
+  </EntityType>
+</Schema>
